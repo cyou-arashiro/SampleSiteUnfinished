@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>らぁ麺 悠心</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <link href="css/jquery.bxslider.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <script src="js/my.js"></script>
+
+  <div class="start">
+    <p style="display: block;">
+      らぁ麺 悠心
+    </p>
+  </div>
+  <div>
+    <!-- Navigation -->
+    <header>
+      <nav id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="index.html">らぁ麺 悠心</a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li><a class="nav-link js-scroll-trigger" href="#about">こだわり</a></li>
+              <li><a class="nav-link js-scroll-trigger" href="#menu">メニュー</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- mein -->
+    <div class="main">
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>一杯への念い</h2>
+      <div class="container">
+        <div class="about-first">
+          <img class="about-img" src="./images/people.jpg"  alt="イラスト1">
+        </div>
+        <div class="about-coment">
+          <span>店名である「悠心」の由来は「初心を忘れずに、心を込めて」との思いから。。</span><br>
+          <span>私は生まれも育ちも八重瀬町であり地元から愛されるお店になるようにと日々　</span><br>
+          <span>励んでいます。大学生の時に九州で食べた豚骨ラーメンに感銘を受けて卒業後、</span><br>
+          <span>九州各地のラーメンを食べ歩きながら人気店で修行しました。　　　　　　　　</span><br>
+          <span>水と豚骨のみで長時間煮込んだスープに、自家製しょうゆダレを合わせた究極の</span><br>
+          <span>とんこつラーメンがおすすめです。　　　　　　　　　　　　　　　　　　　　</span>
+        </div> 
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2>メニュー</h2>
+        <div class="menu-container">
+          <div class="menu-item">
+            <div id="js-show-popup1" onclick="modalfnc('1')" class="menu-item-image"><img src="./images/m-tonkotsu.jpg" alt="豚骨ラーメン"></div>
+            <div class="popup" id="js-popup1" onclick="modalfnc('1')">
+              <div class="popup-inner">
+                <div class="close-btn" id="js-close-btn1"><i class="fas fa-times"></i></div>
+                <a href="#"><img src="./images/m-tonkotsu.jpg" alt="とんこつラーメン画像"></a>
+              </div>
+              <div class="black-background" id="js-black-bg1"></div>
+            </div>
+            <h4 class="menu-item-name">とんこつラーメン</h4>
+            <p class="menu-item-detail">水と豚骨のみで長時間煮込んだ当店人気NO1のラーメン</p>
+            <table class="menu-item-price">
+              <tbody>
+                <tr>
+                  <th>とんこつ<br>ラーメン</th>
+                  <td><span>¥</span>680</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="menu-item">
+            <div id="js-show-popup2" onclick="modalfnc('2')" class="menu-item-image"><img src="./images/m-miso.jpg" alt="辛味噌ラーメン"></div>
+            <div class="popup" id="js-popup2" onclick="modalfnc('2')">
+              <div class="popup-inner">
+                <div class="close-btn" id="js-close-btn2"><i class="fas fa-times"></i></div>
+                <a href="#"><img src="./images/m-miso.jpg" alt="味噌ラーメン画像"></a>
+              </div>
+              <div class="black-background" id="js-black-bg2"></div>
+            </div>
+            <h4 class="menu-item-name">みそラーメン</h4>
+            <p class="menu-item-detail">深いコクが味わえる仙台赤味噌を使用したスープ</p>
+            <table class="menu-item-price">
+              <tbody>
+                <tr>
+                  <th>みそ<br>ラーメン</th>
+                  <td><span>¥</span>720</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="menu-item">
+            <div id="js-show-popup3" onclick="modalfnc('3')" class="menu-item-image"><img src="./images/m-syouyu.jpg" alt="しょうゆラーメン"></div>
+            <div class="popup" id="js-popup3" onclick="modalfnc('3')">
+              <div class="popup-inner">
+                <div class="close-btn" id="js-close-btn3"><i class="fas fa-times"></i></div>
+                <a href="#"><img src="./images/m-syouyu.jpg" alt="ポップアップ画像"></a>
+              </div>
+              <div class="black-background" id="js-black-bg3"></div>
+            </div>
+            <h4 class="menu-item-name">しょうゆラーメン</h4>
+            <p class="menu-item-detail">あさっりとした味の中に深みを感じるスープ</p>
+            <table class="menu-item-price">
+              <tbody>
+                <tr>
+                  <th>しょうゆ<br>ラーメン</th>
+                  <td><span>¥</span>650</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="menu-item">
+            <div id="js-show-popup4" onclick="modalfnc('4')" class="menu-item-image"><img src="./images/m-kotemoya.jpg" alt="コテモヤラーメン"></div>
+            <div class="popup" id="js-popup4" onclick="modalfnc('4')">
+              <div class="popup-inner">
+                <div class="close-btn" id="js-close-btn4"><i class="fas fa-times"></i></div>
+                <a href="#"><img src="./images/m-kotemoya.jpg" alt="ポップアップ画像"></a>
+              </div>
+              <div class="black-background" id="js-black-bg4"></div>
+            </div>
+            <h4 class="menu-item-name">コテモヤラーメン</h4>
+            <p class="menu-item-detail">豚骨と自家製醤油ダレを使ったスープ</p>
+            <table class="menu-item-price">
+              <tbody>
+                <tr>
+                  <th>コテモヤ<br>ラーメン</th>
+                  <td><span>¥</span>800</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="menu-item">
+            <div id="js-show-popup5" onclick="modalfnc('5')" class="menu-item-image"><img src="./images/m-karamiso.jpg" alt="辛みそラーメン"></div>
+            <div class="popup" id="js-popup5" onclick="modalfnc('5')">
+              <div class="popup-inner">
+                <div class="close-btn" id="js-close-btn5"><i class="fas fa-times"></i></div>
+                <a href="#"><img src="./images/m-karamiso.jpg" alt="ポップアップ画像"></a>
+              </div>
+              <div class="black-background" id="js-black-bg5"></div>
+            </div>
+            <h4 class="menu-item-name">辛みそラーメン</h4>
+            <p class="menu-item-detail">仙台赤味噌と自家製辛味噌をブレンドしたスープ</p>
+            <table class="menu-item-price">
+              <tbody>
+                <tr>
+                  <th>辛みそ<br>ラーメン</th>
+                  <td><span>¥</span>750</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="menu-item">
+            <div id="js-show-popup6" onclick="modalfnc('6')" class="menu-item-image"><img src="./images/m-cadon.jpg" alt="チャーシュー丼"></div>
+            <div class="popup" id="js-popup6" onclick="modalfnc('6')">
+              <div class="popup-inner">
+                <div class="close-btn" id="js-close-btn6"><i class="fas fa-times"></i></div>
+                <a href="#"><img src="./images/m-cadon.jpg" alt="ポップアップ画像"></a>
+              </div>
+              <div class="black-background" id="js-black-bg6"></div>
+            </div>
+            <h4 class="menu-item-name">チャーシュー丼</h4>
+            <p class="menu-item-detail">自家製チャーシューをふんだんに乗せた丼</p>
+            <table class="menu-item-price">
+              <tbody>
+                <tr>
+                  <th>チャー<br>シュー丼</th>
+                  <td><span>¥</span>350</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- insideview Section -->
+
+    <!-- Contact Section -->
+
+  </div>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/grayscale.min.js"></script>
+</body>
+
+</html>
